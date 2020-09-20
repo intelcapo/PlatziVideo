@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: #1b262c;
+    width: 100%;
+}
+
+header img{
+    cursor: pointer;
+    margin: 10;
+    width: 200px;
+
+}
