@@ -1,17 +1,72 @@
 body{
     margin: 0px;
+    background-color: #1b262c;
+    font-family: 'Mulish', sans-serif;
 }
 
 header{
-    background-color: #1b262c;
     width: 100%;
-    position: -webkit-sticky;
-    position:  sticky;
+    display: flex;
+    justify-content: space-between;
 }
 
-header img{
+.header__img{
     cursor: pointer;
     margin: 10;
-    width: 200px;
+    width: 250px;
 
 }
+.header__menu--ImgProfile{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    margin-top:10px;
+
+}
+
+.header__menu p{
+    margin-top:20px;
+}
+
+.header__menu--profile{
+    color:white;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.header__menu{
+    color:white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -20px;
+}
+
+.header__menu li { 
+    margin: 10px 0px;
+}
+
+
+.header__menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+
+.header__menu:hover ul,ul:hover{
+    display: block;
+}
+
