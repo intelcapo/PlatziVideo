@@ -1,0 +1,76 @@
+body{
+    background-image: url("../ASSETS/astronaut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.page__container{
+    color: white;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+h1{
+    font-size: 64px;
+}
+
+.animated{
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.animated-text{
+    animation-name: animated-text;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.animated-text h2{
+   font-size: 64px;
+   position: absolute;
+   bottom: 40px;
+  
+}
+.animated-text p{
+    font-size: 48px;
+    position: absolute;
+ }
+       
+       
+@keyframes animated-text {
+    0% {
+        transform: rotate(0);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+    20%,60%{
+        transform: rotate(80deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+    40%{
+        transform: rotate(60deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        transform: rotate(60deg) translateY(0);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+    100%{
+        transform:translateY(450px);
+    }
+}
+
+.page__container--title{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}

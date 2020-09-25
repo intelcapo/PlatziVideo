@@ -123,3 +123,17 @@
 .footer :hover{
   text-decoration: underline;
 }
+
+@media only screen and (max-width:600px){
+    .login__container{
+        background-color: transparent;
+        padding:0;
+        width: 100%;
+        border:none;
+    }
+
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
